@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  xeyes:
+    build: ./xeyes
+    environment:
+      - DISPLAY=host.docker.internal:0
+
+  javacalc:
+    build: ./javacalc
+    environment:
+      - DISPLAY=host.docker.internal:0
+
+  pygui:
+    build: ./pygui
+    environment:
+      - DISPLAY=host.docker.internal:0
